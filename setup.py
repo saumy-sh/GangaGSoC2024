@@ -12,6 +12,8 @@ setup(
     install_requires=[
           'pytest',
           'ganga',
+          'pypdf',
+          'replicate'
       ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
