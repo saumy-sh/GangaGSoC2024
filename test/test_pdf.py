@@ -1,5 +1,5 @@
 import unittest
-import pdf
+from python_scripts.pdf import pdf_parser
 from reportlab.pdfgen.canvas import Canvas
 import os
  
@@ -15,7 +15,7 @@ class Testpdf(unittest.TestCase):
         canvas.showPage()
         canvas.drawString(200,500,page2_text)
         canvas.save()
-        pdf.pdf_parser(test_pdf_path,tmp_folder_path)
+        pdf_parser(test_pdf_path,tmp_folder_path)
         tmp_pdfs = os.listdir(tmp_folder_path)
         self.assertIsNotNone(tmp_pdfs)
         self.assertEqual(len(tmp_pdfs),2) 

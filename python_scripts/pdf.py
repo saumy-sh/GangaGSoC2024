@@ -11,7 +11,7 @@ def pdf_parser(pdffile,output_folder):
     else:
         print(f"{output_folder} found")
     try:
-        reader = PdfReader(pdffile)
+        reader = PdfReader(pdffile,strict= False)
         for page_num in range(0,len(reader.pages)):
             writer = PdfWriter()
             writer.add_page(reader.pages[page_num])
@@ -21,7 +21,7 @@ def pdf_parser(pdffile,output_folder):
                 print("done")
     except Exception as e:
         print(e)
-#her I have given my systems absolute path to folder
+#here I have given my systems absolute path to folder
 output_folder = "/home/saumysharan/GSoC/GangaGSoC2024/pdf_pages"   #name with the absolute path of the output folder where pdf of each page would be stored.
 pdffile = sys.argv[1] #it will take input pdf which is to be separated. This can be given as file argument to ganga Executable file
 print(pdffile)

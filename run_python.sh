@@ -10,4 +10,4 @@
 #the relative path of whatever python file you have given here in run_python.sh,
 #will be run.  
 #here $1 is to take input argument for other files like it_counter.py,pdf.py and is not required for running files that don't require any input like hello.py file
-python3 "/home/saumysharan/GSoC/GangaGSoC2024/it_counter.py" $1
+python3 "/home/saumysharan/GSoC/GangaGSoC2024/python_scripts/it_counter.py" $1
