@@ -13,7 +13,9 @@ setup(
           'pytest',
           'ganga',
           'pypdf',
-          'replicate'
+          'replicate',
+          'unittest',
+          'reportlab'
       ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
