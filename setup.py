@@ -15,7 +15,10 @@ setup(
           'pypdf',
           'replicate',
           'unittest',
-          'reportlab'
+          'reportlab',
+          'langchain',
+          'langchain-openai',
+          'faiss-cpu'/'faiss-gpu'
       ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
